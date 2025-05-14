@@ -1,0 +1,75 @@
+:root {
+  --bg-color-light: #fafafa;
+  --text-color-light: #1f1f1f;
+  --bg-color-dark: #1a1a1a;
+  --text-color-dark: #e0e0e0;
+  --accent-color: #8b5e3c; /* Rich brown for furniture vibe */
+  --highlight-color: #f2cf8d;
+}
+
+/* General */
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-theme {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Header */
+header {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Navigation hover */
+nav ul li a:hover,
+nav ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to bottom right, #f7f3ef, #fffaf5);
+  color: #2e2e2e;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Services section */
+.services {
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* About preview */
+.about-preview {
+  background-color: #fcfcfc;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #111;
+  color: #ddd;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+  color: var(--highlight-color);
+}
+
+/* WhatsApp button remains unchanged (well designed) */
+
+/* Optional: Add smooth transition globally */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
